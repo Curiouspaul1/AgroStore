@@ -1,9 +1,9 @@
-from app import create_app,db
+from app import __call__,db
 import os
 from app.models import User,Role,Space,Product,Product_cat,Space_cat
 from flask_migrate import Migrate
 
-app = create_app(os.getenv('FLASK_CONFIG') or 'default')
+app = __call__(os.getenv('FLASK_CONFIG') or 'default')
 migrate = Migrate(app,db)
 
 @app.shell_context_processor
