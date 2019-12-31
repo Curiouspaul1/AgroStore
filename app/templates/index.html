@@ -44,27 +44,30 @@
 				</ul>
 			</div>
 			<div id="ad-section">
-				<div class="ad-box"></div>
-				<div class="ad-box"></div>
-				<div class="ad-box"></div>
-				<div class="ad-box"></div>
-				<div class="ad-box"></div>
-				<div class="ad-box"></div>
+				<div class="ad-box"><button><img src="{{ url_for('static',filename='icons/ios-add.svg')}}"></button></div>
+				<div class="ad-box"><button><img src="{{ url_for('static',filename='icons/ios-add.svg')}}"></button></div>
+				<div class="ad-box"><button><img src="{{ url_for('static',filename='icons/ios-add.svg')}}"></button></div>
+				<div class="ad-box"><button><img src="{{ url_for('static',filename='icons/ios-add.svg')}}"></button></div>
+				<div class="ad-box"><button><img src="{{ url_for('static',filename='icons/ios-add.svg')}}"></button></div>
+				<div class="ad-box"><button><img src="{{ url_for('static',filename='icons/ios-add.svg')}}"></button></div>
 			</div>
-		</div>
-
-		<div id="side-nav">
-			<a href="#" id="close-side">&times;</a>
-			<a href="#" class="nav-side"><img src="{{ url_for('static',filename='icons/md-home.svg')}}" alt="" srcset="">Home</a>
-			<a href="#" class="nav-side">About</a>
-			<a href="#" class="nav-side">Join Us</a>
-			<a href="#" class="nav-side">FAQ</a>
 		</div>
 
 		<!--footer-->
 		<div>
 			<span></span>
 		</div>
+	</div>
+
+	<div id="side-nav">
+		<div><a href="#" id="close-side">&times;</a></div>
+		<div id="profile" class="sides sides-nav"><a href="#"><img src="{{url_for('static',filename='icons/md-contact.svg')}}"> Create Account</a></div>
+		<div class="sides sides-nav"><a href="#" id=""><img src="{{url_for('static',filename='icons/ios-home.svg')}}">Home</a></div class="ad-box">
+		<div class="sides sides-nav"><a href="#" id=""><img src="{{url_for('static',filename='icons/ios-person-add.svg')}}">About</a></div>
+		<div class="sides sides-nav"><a href="#" id=""><img src="{{url_for('static',filename='icons/ios-cart.svg')}}">My Cart</a></div>
+		<div class="sides sides-nav"><a href="#" id=""><img src="{{url_for('static',filename='icons/md-call.svg')}}">Contact Us</a></div>
+		<div class="sides sides-nav"><a href="#" id=""><img src="{{url_for('static',filename='icons/md-create.svg')}}">Create Store</a></div>
+		<div class="sides sides-nav"><a href="#" id=""><img src="{{url_for('static',filename='icons/ios-help-circle-outline.svg')}}">FAQs</a></div>
 	</div>
 
 <!-- resource -->

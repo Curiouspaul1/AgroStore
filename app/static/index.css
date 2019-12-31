@@ -8,9 +8,14 @@
 	padding: 0;
 }
 
+/*body {
+	background-color:#3d3d3d;
+}*/
+
 .container{
 	margin:0 auto !important;
 	padding:0 !important;
+	color:#290101fd;
 	/*overflow: hidden;
 	background: ;*/
 }
@@ -21,8 +26,9 @@
 	grid-gap:1em;
 	padding: 10% 0 10% 5%;
 	font-family: Montserrat;
-	background:#1ea6fa;
+	background:#f6b948;
 	max-height: 200px;
+	height:200px;
 }
 
 #header #brand-nav {
@@ -43,7 +49,7 @@
 
 #header a {
 	text-decoration: none;
-	color:black;
+	color:#290101fd;
 }
 
 /*#main {
@@ -82,6 +88,7 @@
 	grid-template-rows: 10% 10% 80%;
 	gap:1em;
 	font-family: Montserrat, sans-serif;
+	
 }
 
 #main #main_header > *{
@@ -100,6 +107,7 @@
 #search-f {
 	box-sizing:border-box;
 	border-radius:10px;
+	border:1px solid #111;
 	padding:2% 5%;
 }
 
@@ -119,7 +127,7 @@
 }
 
 #mini-nav a {
-	color:black;
+	color:#290101fd;
 	text-decoration: none;
 }
 
@@ -135,6 +143,22 @@
 	border: solid #111 1px;
 	height: 300px;
 	background-color: #f4f4f4;
+}
+
+.ad-box > button {
+	background:#f8d743;
+	width: 40px;
+	border:none;
+	border-top-left-radius: 10px;
+	position: relative;
+	top:89%;
+	left:87%;
+}
+
+.ad-box > button>img {
+	width:30px;
+	height:30px;
+	text-align: center;
 }
 
 #ham-nav {
@@ -153,28 +177,63 @@
 	top:0;
 	width:0;
 	height:100%;
-	max-height:100%;
 	z-index: 10;
 	right:0;
-	background-color:#f4f4f4;
-	font-size:50px;
+	background:#111;
+	font-size:30px;
 	overflow-x: hidden;
-	opacity:0.9;
 	transition: width 0.35s ease-in-out;
-	font-family:Montserrat,sans-serif
+	font-family:Montserrat,sans-serif;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	opacity: 0.9;
 }
 
-#side-nav > a {
+#side-nav  a {
 	text-decoration: none;
 	font-weight: bolder;
-	display:flex;
-	flex-direction: column;
 	text-align: center;
-	color: #290101fd;
-	margin:20%;
+	color: #fbe47e;
 }
 
-#side-nav #close-side {
+#side-nav img {
+	width:40px;
+	height:40px;
+}
+
+#side-nav #profile {
+	border-bottom:1px solid #290101fd;
+	margin-bottom:10%;
+	width:100%;
+	height:7%;
+}
+
+.sides {
+	margin-left:5%;
+	margin-bottom:10%;
+}
+
+.sides img {
+	padding:3%;
+	background: #f8d743;
+	border-radius:15px;
+	margin-bottom:-5%;
+	margin-right:5%;
+}
+
+.sides-nav {
+	margin-bottom:20%;
+}
+
+#close-side {
+	position: relative;
+	top:0;
+	right:-90%;
+	font-size:2em;
+	margin-bottom:15%;
+}
+
+/*#side-nav #close-side {
 	position: relative;
 	top:0;
 	right:-30%;
@@ -184,9 +243,4 @@
 #side-nav img {
 	width:40px;
 	height:40px;
-}
-
-#side-nav .nav-side {
-	border:1px solid #111;
-	border-radius: 10px;
-}
+}*/

@@ -7,10 +7,10 @@ const forest = document.getElementById('forestry');
 // side-nav
 side_nav = document.getElementById('side-nav');
 ham = document.getElementById('ham-nav');
-close = document.getElementById('close-side')
+close = document.getElementById('close-side');
 
 ham.addEventListener('click',()=>
-    side_nav.style.width = '45%'
+    side_nav.style.width = '50%'
 );
 
 close.addEventListener('click',()=>
