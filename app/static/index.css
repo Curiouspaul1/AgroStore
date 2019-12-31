@@ -179,21 +179,20 @@
 	height:100%;
 	z-index: 10;
 	right:0;
-	background:#111;
+	background:#f4f4f4;
 	font-size:30px;
 	overflow-x: hidden;
 	transition: width 0.35s ease-in-out;
 	font-family:Montserrat,sans-serif;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
-	opacity: 0.9;
 }
 
 #side-nav  a {
 	text-decoration: none;
 	font-weight: bolder;
 	text-align: center;
-	color: #fbe47e;
+	color: #290101fd;
 }
 
 #side-nav img {
