@@ -1,0 +1,21 @@
+@font-face{
+    font-family:'Montserrat';
+	src: url(Montserrat/Montserrat-Regular.ttf);
+}
+
+* {
+	margin:0;
+	padding: 0;
+}
+
+/*body {
+	background-color:#3d3d3d;
+}*/
+
+.container{
+	margin:0 auto !important;
+	padding:0 !important;
+	color:#290101fd;
+	/*overflow: hidden;
+	background: ;*/
+}
