@@ -70,7 +70,7 @@ class Space(db.Model):
     description = db.Column(db.Text)
     telephone = db.Column(db.String(50))
     email = db.Column(db.String(50),unique=True)
-    space_cat_id = db.Column(db.Integer,db.ForeignKey('category.id'))
+    space_cat_id = db.Column(db.Integer,db.ForeignKey('space_cat.id'))
     products = db.relationship('Product',backref='product.id')
 
 class Product(db.Model):

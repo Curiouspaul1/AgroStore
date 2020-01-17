@@ -18,8 +18,8 @@ close.addEventListener('click',()=>
 );
 
 crops.addEventListener('click', ()=>
-item_head.innerHTML = crops.innerText,
-item_head.classList.add('nav-active')
+item_head.innerHTML = crops.innerText
+//item_head.classList.add('nav-active')
 );
 
 livestock.addEventListener('click', ()=>
@@ -28,12 +28,12 @@ item_head.classList.add('nav-active')
 );
 
 vet.addEventListener('click', ()=>
-item_head.innerHTML = vet.innerText,
-item_head.classList.add('nav-active')
+item_head.innerHTML = vet.innerText
+//item_head.classList.add('nav-active')
 );
 
 forest.addEventListener('click', ()=>
-item_head.innerHTML = forest.innerText,
-item_head.classList.add('nav-active')
+item_head.innerHTML = forest.innerText
+//item_head.classList.add('nav-active')
 );
 

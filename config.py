@@ -1,5 +1,7 @@
 import os
 
+dbpassword = os.getenv('dbpassword')
+
 class Config:
     SECRET_KEY = os.getenv('SECRET_KEY') or os.urandom(24)
     MAIL_SERVER = 'smtp.googlemail.com'
@@ -16,14 +18,14 @@ class Config:
 
 class DevelopmentConfig(Config):
     DEBUG=True
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_URI') or f"mysql://root:{'dbpassword'}@localhost/farmspace_dev"
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_URI') or f"mysql+pymysql://root:{dbpassword}@localhost/farmspace_dev"
 
 class TestingConfig(Config):
     TESTING = True
-    SQLALCHEMY_DATABASE_URI = os.environ.get('TEST_URI') or f"mysql://root:{'dbpassword'}@localhost/farmspace_test"
+    SQLALCHEMY_DATABASE_URI = os.environ.get('TEST_URI') or f"mysql+pymysql://root:{dbpassword}@localhost/farmspace_test"
 
 class ProductionConfig(Config):
-    SQLALCHEMY_DATABASE_URI = os.environ.get('PROD_URI') or f"mysql://root:{'dbpassword'}@localhost/farmspace"
+    SQLALCHEMY_DATABASE_URI = os.environ.get('PROD_URI') or f"mysql+pymysql://root:{dbpassword}@localhost/farmspace"
 
 config = {
     'development':DevelopmentConfig,
